@@ -57,8 +57,8 @@ export default function Home() {
 
       {/* section testimonial  */}
       <section id="testimonial" className="bg-white p-10 lg:p-20">
-        <div className="flex flex-col lg:flex-row gap-6 pr-10">
-          <div className="flex flex-col gap-8 text-black">
+        <div className="flex flex-col lg:flex-row gap-6 pr-10 w-full">
+          <div className="flex flex-col gap-8 text-black basis-full">
             <h2 className="text-[2rem]/[80%] font-black -tracking-[.1rem]">
               HONEST AND <br /> TRANSPARENT <br /> PRICING
             </h2>
@@ -93,7 +93,7 @@ export default function Home() {
               Based on data and driving — not credit scores.
             </p>
           </div>
-          <div className="flex flex-col gap-8 text-black">
+          <div className="flex flex-col gap-8 text-black basis-full">
             <h2 className="text-[2rem]/[80%] font-black -tracking-[.1rem]">
               CUSTOMER CARE
               <br /> THAT
@@ -130,7 +130,7 @@ export default function Home() {
               Based on data and driving — not credit scores.
             </p>
           </div>
-          <div className="flex flex-col gap-8 text-black">
+          <div className="flex flex-col gap-8 text-black basis-full">
             <h2 className="text-[2rem]/[80%] font-black -tracking-[.1rem]">
               MISSION <br /> DRIVEN <br />
               BUSINESS
@@ -173,6 +173,7 @@ export default function Home() {
             alt="Loop Info"
             width="1200"
             height="800"
+            className="object-cover w-full"
           />
         </div>
 
@@ -222,7 +223,7 @@ export default function Home() {
         id="featureBlog"
         className="bg-white p-10 lg:p-20 flex flex-col gap-12"
       >
-        <div className="flex flex-col md:flex-row gap-6 md:gap-0 items-start justify-start md:justify-between md:items-center">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-0 items-start justify-start lg:justify-around lg:items-center">
           <div className="text-black flex flex-col gap-2 items-center">
             <InView threshold={0.1}>
               {({ inView, ref }) => (

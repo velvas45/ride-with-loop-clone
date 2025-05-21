@@ -18,7 +18,7 @@ const NavigationHeader = () => {
         />
       </Link>
 
-      <div className="flex gap-1 text-[#222] text-[11px]/5 max-lg:hidden">
+      <div className="flex gap-1 text-[#222] text-sm/5 max-lg:hidden">
         <div className="flex items-center gap-2 font-bold pr-2">
           <Link
             href="/our_story"
@@ -26,12 +26,12 @@ const NavigationHeader = () => {
           >
             Our Story
           </Link>
-          <a
-            href="#"
+          <Link
+            href="/coverages"
             className="border-b-3 focus:outline-0 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1 px-2"
           >
             Coverages
-          </a>
+          </Link>
           <div
             role="button"
             className="flex flex-col gap-2 border-b-3 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1 px-2 cursor-pointer relative"
@@ -50,7 +50,7 @@ const NavigationHeader = () => {
             <span className="focus:outline-0">Partner Agents</span>
             <nav
               className={cn(
-                "min-w-full w-32 left-0 p-3.5 rounded-xl bg-white transform transition-all duration-200 ease-in absolute top-0 text-black flex flex-col gap-2",
+                "min-w-full w-40 left-0 p-3.5 rounded-xl bg-white transform transition-all duration-200 ease-in absolute top-0 text-black flex flex-col gap-2",
                 activeMenuDialog == "AGENTS"
                   ? "translate-y-8 opacity-100"
                   : "opacity-0 translate-y-14 "
@@ -91,7 +91,7 @@ const NavigationHeader = () => {
                 "min-w-full w-52 left-0 p-3.5 rounded-xl bg-white transform transition-all duration-200 ease-in absolute top-0 text-black flex flex-col gap-2",
                 activeMenuDialog == "HELP"
                   ? "translate-y-8 opacity-100"
-                  : "opacity-0 translate-y-14 "
+                  : "opacity-0 translate-y-14"
               )}
             >
               <a
@@ -121,10 +121,10 @@ const NavigationHeader = () => {
           </div>
         </div>
         <div className="flex items-center gap-3 border-l border-[#e9e9e8] pl-2">
-          <button className="px-3 py-2 cursor-pointer hover:transition-all hover:duration-500 hover:ease-in-out hover:scale-105 hover:-translate-y-1 text-center text-[#23231e] border border-[#23231e] text-xs bg-[#f5e06400] rounded-4xl">
+          <button className="px-3 py-2 cursor-pointer hover:transition-all hover:duration-500 hover:ease-in-out hover:scale-105 hover:-translate-y-1 text-center text-[#23231e] border border-[#23231e] text-sm bg-[#f5e06400] rounded-4xl">
             Manage Policy
           </button>
-          <button className="px-3 py-2 cursor-pointer hover:transition-all hover:duration-500 hover:ease-in-out hover:scale-105 hover:-translate-y-1 text-center text-white text-xs bg-[#23231e] rounded-4xl">
+          <button className="px-3 py-2 cursor-pointer hover:transition-all hover:duration-500 hover:ease-in-out hover:scale-105 hover:-translate-y-1 text-center text-white text-sm bg-[#23231e] rounded-4xl">
             Get Your Price
           </button>
         </div>
