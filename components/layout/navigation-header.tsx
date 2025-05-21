@@ -130,7 +130,7 @@ const NavigationHeader = () => {
         </div>
       </div>
 
-      <button className="border-b-3 focus:outline-0 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1 px-2 text-black">
+      <button className="lg:hidden border-b-3 focus:outline-0 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1 px-2 text-black">
         Manage Policy
       </button>
     </div>
