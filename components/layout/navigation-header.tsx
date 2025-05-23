@@ -56,12 +56,12 @@ const NavigationHeader = () => {
                   : "opacity-0 translate-y-14 "
               )}
             >
-              <a
-                href="#"
+              <Link
+                href="/partner_agent"
                 className="border-b-3 focus:outline-0 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1"
               >
                 Become an Agent
-              </a>
+              </Link>
               <a
                 href="#"
                 className="border-b-3 focus:outline-0 border-white hover:border-black hover:transition-all hover:duration-400 hover:ease-in-out hover:scale-105 hover:-translate-y-1"
